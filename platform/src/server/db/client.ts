@@ -50,13 +50,14 @@ export async function openPostgres(
   //  - max_pipeline:1 → one query in flight per connection. postgres.js pipelines up to 100 by default, and the
   //    pooler can then split a pipeline across server connections, leaving the session stuck in ClientRead until
   //    "statement timeout" (measured: bursts of concurrent queries hung for minutes; with 1 they take <1 s).
+  // `max_pipeline` is read by postgres.js (src/connection.js) but missing from its TypeScript definitions.
   const sql = postgres(url, {
     prepare: false,
     max_pipeline: 1,
     max: Number(process.env.DATABASE_POOL_MAX ?? 5),
     connect_timeout: 15,
     idle_timeout: 30,
-  });
+  } as Parameters<typeof postgres>[1]);
   return {
     db: drizzle(sql, { schema }) as unknown as Db,
     close: () => sql.end(),
