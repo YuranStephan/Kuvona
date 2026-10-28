@@ -130,5 +130,5 @@ Quando acabares cada tarefa: `npm run typecheck && npm test`, atualiza `docs/STA
 
 **Feito pelo Claude:** Supabase ligado e migrado (25 tabelas); catálogo carregado com 8 cursos / 25 aulas / **24 vídeos reais de tutoriais do YouTube** (IDs validados; `src/server/seed/demo-videos.json`); conta de gestão do proprietário criada; correção de bloqueios do pooler (`max_pipeline: 1`); `vercel.json` com região `arn1`; `npm run db:seed-catalog` (seguro em base real: sem contas de teste); `npm run dev:local`; repositório git local inicial (`main`, 1 commit, sem segredos).
 
-**Pendente do proprietário:** criar o repositório vazio no GitHub e dizer o nome (o `gh` não está instalado e o Claude não tem credenciais para o criar).
+**GitHub:** repositório `https://github.com/YuranStephan/Kuvona` (remoto `origin`, branch `main`), enviado pelo Claude em 28/10/2026. É **público** até o proprietário o tornar privado. O Codex faz commits pequenos e só faz `git push` quando o proprietário pedir; nunca `--force`.
 **Codex:** não fazer `git push` sem o proprietário confirmar o repositório; trabalhar em commits pequenos na branch `main` local.
