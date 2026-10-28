@@ -20,7 +20,7 @@ const csp = [
 const config: NextConfig = {
   poweredByHeader: false,
   turbopack: { root: process.cwd() },
-  serverExternalPackages: ["@electric-sql/pglite", "postgres"],
+  serverExternalPackages: ["@electric-sql/pglite", "pg"],
   images: {
     remotePatterns: [{ protocol: "https", hostname: "i.ytimg.com" }],
   },

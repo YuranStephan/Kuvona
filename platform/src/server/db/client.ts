@@ -39,40 +39,57 @@ export async function openPglite(
   return { db: pglite as unknown as Db, close: () => client.close() };
 }
 
-/** Hosted PostgreSQL (Supabase or any Postgres 15+). Migrations run separately via `npm run db:migrate`. */
+/**
+ * Hosted PostgreSQL (Supabase or any Postgres 15+), through node-postgres.
+ *
+ * Why pg + attachDatabasePool: on Vercel, idle functions are frozen between requests. A pooled socket that the
+ * server closed while frozen still looks alive, so the next query is written into it and waits for the 300 s
+ * function limit (measured on the live site: about 1 in 3 database-backed pages hung, static pages never did).
+ * attachDatabasePool releases idle connections before the instance is suspended, and the client-side timeouts
+ * below turn any remaining stall into a fast error instead of a hung page.
+ *
+ * Transaction-mode poolers (Supabase port 6543) need unnamed statements: pg only prepares a statement when the
+ * query has a name, and Drizzle never sets one, so nothing else is required. Migrations run separately via
+ * `npm run db:migrate`.
+ */
 export async function openPostgres(
   url: string,
 ): Promise<{ db: Db; close: () => Promise<void> }> {
-  const { default: postgres } = await import("postgres");
-  const { drizzle } = await import("drizzle-orm/postgres-js");
-  // Transaction-mode poolers (Supabase port 6543) need two things from the client:
-  //  - prepare:false  → no named prepared statements;
-  //  - max_pipeline:1 → one query in flight per connection. postgres.js pipelines up to 100 by default, and the
-  //    pooler can then split a pipeline across server connections, leaving the session stuck in ClientRead until
-  //    "statement timeout" (measured: bursts of concurrent queries hung for minutes; with 1 they take <1 s).
-  // `max_pipeline` is read by postgres.js (src/connection.js) but missing from its TypeScript definitions.
-  const sql = postgres(url, {
-    prepare: false,
-    max_pipeline: 1,
+  const { Pool } = await import("pg");
+  const { drizzle } = await import("drizzle-orm/node-postgres");
+  const pool = new Pool({
+    connectionString: url,
     max: Number(process.env.DATABASE_POOL_MAX ?? 5),
-    connect_timeout: 15,
-    idle_timeout: 30,
-  } as Parameters<typeof postgres>[1]);
+    connectionTimeoutMillis: 10_000,
+    idleTimeoutMillis: 5_000,
+    query_timeout: 15_000,
+    statement_timeout: 15_000,
+    keepAlive: true,
+    // Encrypts the connection. The pooler certificate is not pinned yet (see docs/DEPLOY.md); the previous
+    // driver connected without TLS at all.
+    ssl: { rejectUnauthorized: false },
+  });
+  // A broken idle client must never crash the process; the pool discards it and opens a new one.
+  pool.on("error", (error) => console.error("[db] erro numa ligação inativa:", error.message));
+  if (process.env.VERCEL) {
+    const { attachDatabasePool } = await import("@vercel/functions");
+    attachDatabasePool(pool);
+  }
   return {
-    db: drizzle(sql, { schema }) as unknown as Db,
-    close: () => sql.end(),
+    db: drizzle(pool, { schema }) as unknown as Db,
+    close: () => pool.end(),
   };
 }
 
 export async function migratePostgres(url: string) {
-  const { default: postgres } = await import("postgres");
-  const { drizzle } = await import("drizzle-orm/postgres-js");
-  const { migrate } = await import("drizzle-orm/postgres-js/migrator");
-  const sql = postgres(url, { prepare: false, max: 1 });
+  const { Pool } = await import("pg");
+  const { drizzle } = await import("drizzle-orm/node-postgres");
+  const { migrate } = await import("drizzle-orm/node-postgres/migrator");
+  const pool = new Pool({ connectionString: url, max: 1, ssl: { rejectUnauthorized: false } });
   try {
-    await migrate(drizzle(sql), { migrationsFolder: migrationsFolder() });
+    await migrate(drizzle(pool), { migrationsFolder: migrationsFolder() });
   } finally {
-    await sql.end();
+    await pool.end();
   }
 }
 
