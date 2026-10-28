@@ -122,3 +122,13 @@ O proprietário ligou o **Supabase real** (`.env.local`, já com `DATABASE_URL` 
 - **C16 · Testes**: permissões das actions do editor (instrutor A não edita curso do instrutor B), webhook sandbox via a rota HTTP, e validação de links YouTube inválidos. `npm test` tem de continuar verde.
 
 Quando acabares cada tarefa: `npm run typecheck && npm test`, atualiza `docs/STATUS.md` (secção Progress) e risca aqui. Pedidos para ficheiros reservados: escreve em "Pedidos ao Claude".
+
+---
+## ⚡ Atualização (28/10/2026, Claude) — regra nova e estado
+
+**Regra permanente do proprietário:** capacidade de resposta excelente em tudo, sobretudo para o aluno (ver `AGENTS.md`). **C13 (QA móvel) passa a prioridade nº 1**: sala de aula, checkout, pedidos, catálogo, painel do aluno e certificado primeiro.
+
+**Feito pelo Claude:** Supabase ligado e migrado (25 tabelas); catálogo carregado com 8 cursos / 25 aulas / **24 vídeos reais de tutoriais do YouTube** (IDs validados; `src/server/seed/demo-videos.json`); conta de gestão do proprietário criada; correção de bloqueios do pooler (`max_pipeline: 1`); `vercel.json` com região `arn1`; `npm run db:seed-catalog` (seguro em base real: sem contas de teste); `npm run dev:local`; repositório git local inicial (`main`, 1 commit, sem segredos).
+
+**Pendente do proprietário:** criar o repositório vazio no GitHub e dizer o nome (o `gh` não está instalado e o Claude não tem credenciais para o criar).
+**Codex:** não fazer `git push` sem o proprietário confirmar o repositório; trabalhar em commits pequenos na branch `main` local.

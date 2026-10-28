@@ -86,6 +86,13 @@ platform/
 10. No fake ratings/student counts. Reviews need active enrollment + ≥1 completed lesson.
 11. Sandbox payments only in local mode (no `DATABASE_URL`) or with `KUVONA_ENABLE_SANDBOX=1`.
 
+
+### 🌐 Estado da infraestrutura (28/10/2026)
+- **Supabase** (eu-north-1) ligado via `.env.local` (não versionado): 25 tabelas, 8 cursos, 25 aulas (24 com vídeo real), 1 conta de gestão do proprietário.
+- **Git**: repositório local em `main` com o primeiro commit. Falta criar o repositório remoto no GitHub (conta YuranStephan) e fazer `git remote add origin <url> && git push -u origin main`.
+- **Vercel**: Root Directory `platform`, região `arn1` (em `vercel.json`), variáveis em `docs/DEPLOY.md`.
+- **Regra permanente**: capacidade de resposta máxima em tudo (ver `AGENTS.md`).
+
 ## Progress
 
 ### Done ✅
