@@ -1,0 +1,14 @@
+// Fast local development on the embedded database (PGlite), ignoring DATABASE_URL from .env.local.
+// Use `npm run dev` to work against Supabase instead. The two databases are separate.
+import { spawn } from "node:child_process";
+import { createRequire } from "node:module";
+
+const require = createRequire(import.meta.url);
+const next = require.resolve("next/dist/bin/next");
+// An empty value counts as "already set" for Next's env loader, so .env.local cannot override it.
+const child = spawn(process.execPath, [next, "dev", "-p", process.env.PORT ?? "3100"], {
+  stdio: "inherit",
+  env: { ...process.env, DATABASE_URL: "" },
+});
+child.on("exit", (code) => process.exit(code ?? 0));
+for (const signal of ["SIGINT", "SIGTERM"]) process.on(signal, () => child.kill(signal));

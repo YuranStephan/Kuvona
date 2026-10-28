@@ -1,0 +1,38 @@
+{
+  "_note": "Tutoriais públicos do YouTube para testar a plataforma (IDs validados por oEmbed em 2026-10-28). Chave = id do curso no catálogo inicial; lista = uma entrada por aula, por ordem. Substituir pelos vídeos próprios dos instrutores no editor.",
+  "business": [
+    { "id": "fEvKo90qBns", "source": "Talks at Google" },
+    { "id": "qp0HIF3SfI4", "source": "TED" },
+    { "id": "1hHMwLxN6EM", "source": "Y Combinator" }
+  ],
+  "design": [
+    { "id": "YqQx75OPRa0", "source": "LearnFree" },
+    { "id": "sByzHoiYFX0", "source": "LearnFree" },
+    { "id": "WONZVnlam6U", "source": "Gareth David Studio" }
+  ],
+  "digital": [
+    { "id": "mNBmG24djoY", "source": "Med School Insiders" },
+    { "id": "oTugjssqOT0", "source": "Carnegie Mellon University" },
+    { "id": "arj7oStGLkU", "source": "TED" }
+  ],
+  "sheets": [
+    { "id": "Vl0H-qTclOg", "source": "freeCodeCamp.org" },
+    { "id": "rwbho0CgEAE", "source": "Technology for Teachers and Students" },
+    null
+  ],
+  "marketing": [
+    { "id": "bixR-KIJKYM", "source": "Simplilearn" },
+    { "id": "nU-IIXBWlS4", "source": "Simplilearn" },
+    { "id": "u4ZoJKF_VuA", "source": "TEDx Talks" }
+  ],
+  "python": [
+    { "id": "kqtD5dpn9C8", "source": "Programming with Mosh" },
+    { "id": "rfscVS0vtbw", "source": "freeCodeCamp.org" },
+    { "id": "vEQ8CXFWLZU", "source": "Internet Made Coder" }
+  ],
+  "career": [
+    { "id": "Tt08KmFfIYQ", "source": "Jeff Su" },
+    { "id": "kayOhGRcNt4", "source": "Linda Raynier" },
+    { "id": "HG68Ymazo18", "source": "Indeed" }
+  ]
+}

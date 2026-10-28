@@ -1,0 +1,884 @@
+{
+  "source": "Curso em Vídeo · Gustavo Guanabara",
+  "courses": [
+    {
+      "id": "web",
+      "title": "Da ideia à tua primeira página",
+      "subtitle": "HTML & CSS do zero",
+      "category": "Tecnologia",
+      "level": "Iniciante",
+      "price": 0,
+      "color": "sage",
+      "symbol": "</>",
+      "instructor": "Curadoria Kuvona",
+      "initials": "KV",
+      "minutes": 78,
+      "featured": true,
+      "description": "Entende a linguagem da web e dá forma à tua primeira página. Uma introdução acessível, com vídeos públicos do Curso em Vídeo e exercícios práticos da Kuvona.",
+      "outcomes": [
+        "Estruturar uma página com HTML semântico",
+        "Preparar o teu ambiente de desenvolvimento",
+        "Inserir imagens com descrições acessíveis",
+        "Publicar o teu primeiro pequeno projeto"
+      ],
+      "lessons": [
+        {
+          "id": "web-1",
+          "title": "Um primeiro olhar para a web",
+          "module": "01 · O ponto de partida",
+          "minutes": 15,
+          "video": "Ejkb_YpuHWs",
+          "source": "Curso em Vídeo · Gustavo Guanabara",
+          "content": [
+            "Uma página web combina estrutura, apresentação e comportamento. O HTML organiza o conteúdo; o CSS define como ele aparece; o JavaScript responde às interações.",
+            "Enquanto vês a introdução, identifica três páginas que usas todos os dias. Que conteúdo é essencial em cada uma? O que mudarias para ajudar quem as visita?"
+          ],
+          "task": "Desenha no papel a estrutura de uma página pessoal: um título, uma apresentação, três competências e uma forma de contacto."
+        },
+        {
+          "id": "web-2",
+          "title": "O teu mapa de aprendizagem",
+          "module": "01 · O ponto de partida",
+          "minutes": 18,
+          "video": "jgQjeqGRdgA",
+          "source": "Curso em Vídeo · Gustavo Guanabara",
+          "content": [
+            "Começa por pequenos objetivos. Primeiro cria um documento HTML, depois acrescenta estilos e só então explora interações.",
+            "Uma rotina de 25 minutos com um objetivo concreto costuma ser mais fácil de manter do que sessões longas e pouco definidas. Usa a agenda para reservar a tua próxima sessão."
+          ],
+          "task": "Escreve três coisas que queres conseguir construir no final deste percurso."
+        },
+        {
+          "id": "web-3",
+          "title": "Prepara as tuas ferramentas",
+          "module": "02 · Mãos à obra",
+          "minutes": 25,
+          "video": "UForX7ehChM",
+          "source": "Curso em Vídeo · Gustavo Guanabara",
+          "content": [
+            "Precisas de um editor de texto e de um navegador. Cria uma pasta para o projeto e guarda nela um ficheiro chamado index.html.",
+            "Um bom projeto começa organizado: usa nomes simples, guarda imagens numa pasta própria e verifica as alterações no navegador."
+          ],
+          "task": "Cria o ficheiro index.html com um título e um parágrafo. Abre-o no navegador e altera o texto."
+        },
+        {
+          "id": "web-4",
+          "title": "Imagens que contam uma história",
+          "module": "02 · Mãos à obra",
+          "minutes": 20,
+          "video": "CwOmEetWMnU",
+          "source": "Curso em Vídeo · Gustavo Guanabara",
+          "content": [
+            "Uma imagem precisa de contexto. Usa o atributo alt para explicar o conteúdo relevante a quem não consegue vê-la.",
+            "Escolhe imagens adequadas ao tamanho de apresentação. Ficheiros pequenos ajudam quem aprende com dados móveis. Confirma sempre que tens autorização para usar uma imagem."
+          ],
+          "task": "Acrescenta uma imagem ao teu projeto, com texto alternativo útil. Compara o tamanho do ficheiro original com uma versão otimizada."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Qual é o papel principal do HTML?",
+          "options": [
+            "Estruturar o conteúdo de uma página",
+            "Processar pagamentos",
+            "Definir apenas as cores"
+          ],
+          "correct": 0,
+          "explanation": "HTML descreve a estrutura e o significado do conteúdo."
+        },
+        {
+          "question": "O que deve comunicar o atributo alt?",
+          "options": [
+            "O preço da imagem",
+            "Uma descrição relevante da imagem",
+            "O nome do navegador"
+          ],
+          "correct": 1,
+          "explanation": "O texto alternativo torna a informação da imagem acessível."
+        },
+        {
+          "question": "Qual é uma boa prática para dados móveis?",
+          "options": [
+            "Usar sempre a imagem maior",
+            "Carregar vídeos automaticamente",
+            "Otimizar o tamanho das imagens"
+          ],
+          "correct": 2,
+          "explanation": "Imagens otimizadas reduzem o consumo de dados e o tempo de carregamento."
+        }
+      ],
+      "resources": [
+        {
+          "title": "Checklist da primeira página",
+          "text": "CHECKLIST KUVONA — PRIMEIRA PÁGINA\n\n[ ] Documento index.html\n[ ] Título descritivo\n[ ] Cabeçalho e conteúdo principal\n[ ] Imagens com alt\n[ ] Links com texto claro\n[ ] Verificação no telemóvel\n[ ] Imagens otimizadas\n"
+        }
+      ],
+      "skills": [
+        "HTML",
+        "CSS",
+        "Acessibilidade"
+      ],
+      "requirements": [
+        "Um computador com navegador e editor de texto.",
+        "Não precisas de experiência em programação."
+      ],
+      "audience": [
+        "Quem quer construir a sua primeira página.",
+        "Estudantes e profissionais a explorar desenvolvimento web."
+      ],
+      "instructorBio": "A Curadoria Kuvona organiza um percurso introdutório com vídeos públicos do Curso em Vídeo, de Gustavo Guanabara, e exercícios escritos para esta demonstração. A Kuvona não representa nem vende o curso original.",
+      "project": "Uma página pessoal com apresentação, competências, imagem acessível e contactos."
+    },
+    {
+      "id": "business",
+      "title": "O teu negócio começa aqui",
+      "subtitle": "Da ideia ao primeiro cliente",
+      "category": "Negócios",
+      "level": "Iniciante",
+      "price": 150000,
+      "color": "clay",
+      "symbol": "↗",
+      "instructor": "Equipa Kuvona",
+      "initials": "KV",
+      "minutes": 45,
+      "description": "Transforma uma ideia num plano simples e testável. Trabalha o problema do cliente, a tua proposta de valor e a primeira experiência de venda com exemplos práticos.",
+      "outcomes": [
+        "Definir um cliente e um problema concreto",
+        "Construir uma proposta de valor clara",
+        "Planear uma experiência de validação",
+        "Separar receita, custo e margem"
+      ],
+      "lessons": [
+        {
+          "id": "biz-1",
+          "title": "Começa pelo problema",
+          "module": "01 · Descobrir",
+          "minutes": 15,
+          "content": [
+            "Uma boa ideia de negócio começa com um problema observável. Em vez de “quero abrir uma loja”, experimenta “quero ajudar estudantes a encontrar refeições acessíveis perto da faculdade”.",
+            "Conversa com potenciais clientes antes de investir. Pergunta o que fazem hoje, quanto tempo perdem e o que já tentaram. Evita perguntar apenas se gostam da tua ideia: elogios não são vendas."
+          ],
+          "task": "Escreve o problema em uma frase e prepara cinco perguntas abertas para três potenciais clientes."
+        },
+        {
+          "id": "biz-2",
+          "title": "Uma proposta de valor clara",
+          "module": "01 · Descobrir",
+          "minutes": 15,
+          "content": [
+            "Uma proposta de valor liga um cliente, um resultado e uma diferença. Exemplo: “Entregamos almoços caseiros a estudantes do bairro, com menu do dia e recolha num ponto próximo”.",
+            "Escolhe uma promessa que possas cumprir. Explica o que ofereces, para quem e como resolve uma necessidade. Não precisas de servir todas as pessoas desde o primeiro dia."
+          ],
+          "task": "Completa: Ajudamos [cliente] a conseguir [resultado] através de [solução]. Pede a alguém que explique a proposta por palavras próprias."
+        },
+        {
+          "id": "biz-3",
+          "title": "Testa pequeno, aprende cedo",
+          "module": "02 · Validar",
+          "minutes": 15,
+          "content": [
+            "Uma experiência pequena pode ser uma pré-reserva, uma amostra ou uma conversa com proposta concreta. Define o que queres aprender, o limite de investimento e um critério de sucesso.",
+            "Regista preço, custo direto e quantidade. A margem de contribuição é a receita menos os custos variáveis; ainda terá de cobrir custos fixos. Estes exemplos são exercícios educativos."
+          ],
+          "task": "Planeia uma experiência de sete dias: público, oferta, canal, orçamento e sinal que te fará continuar ou mudar."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Qual é a melhor primeira evidência de um problema?",
+          "options": [
+            "Um logótipo bonito",
+            "Entrevistas sobre dificuldades reais do cliente",
+            "O número de seguidores de um concorrente"
+          ],
+          "correct": 1,
+          "explanation": "As experiências reais dos clientes ajudam a testar a necessidade."
+        },
+        {
+          "question": "Uma proposta de valor deve explicar…",
+          "options": [
+            "Cliente, resultado e solução",
+            "Apenas o nome do negócio",
+            "Todas as ideias futuras"
+          ],
+          "correct": 0,
+          "explanation": "A clareza liga a oferta a uma necessidade concreta."
+        },
+        {
+          "question": "O objetivo de um teste pequeno é…",
+          "options": [
+            "Garantir lucro para sempre",
+            "Evitar falar com clientes",
+            "Aprender com um investimento limitado"
+          ],
+          "correct": 2,
+          "explanation": "Uma experiência reduz incerteza antes de um investimento maior."
+        }
+      ],
+      "resources": [
+        {
+          "title": "Plano de validação em uma página",
+          "text": "PLANO DE VALIDAÇÃO — KUVONA\n\nCliente:\nProblema observado:\nSolução proposta:\nPerguntas de entrevista:\nExperiência de 7 dias:\nLimite de investimento:\nCritério de sucesso:\nO que aprendemos:\nPróximo passo:\n"
+        }
+      ],
+      "skills": [
+        "Empreendedorismo",
+        "Validação",
+        "Proposta de valor"
+      ],
+      "requirements": [
+        "Uma ideia ou um problema que gostarias de explorar.",
+        "Um caderno ou documento para registar as atividades."
+      ],
+      "audience": [
+        "Pessoas que querem testar uma ideia antes de investir.",
+        "Pequenos empreendedores a clarificar a sua oferta."
+      ],
+      "instructorBio": "A Equipa Kuvona é a autoria editorial dos conteúdos de prática desta demonstração. Os exercícios usam exemplos simples para explorar conceitos de negócio; não constituem consultoria financeira.",
+      "project": "Um plano de validação de sete dias com cliente, oferta, orçamento e critério de sucesso."
+    },
+    {
+      "id": "design",
+      "title": "Design que faz sentido",
+      "subtitle": "Comunicação visual essencial",
+      "category": "Criatividade",
+      "level": "Iniciante",
+      "price": 95000,
+      "color": "lavender",
+      "symbol": "Aa",
+      "instructor": "Equipa Kuvona",
+      "initials": "KV",
+      "minutes": 40,
+      "description": "Organiza informação, escolhe tipografia e cria composições claras. Um percurso prático para melhorar os teus cartazes, apresentações e publicações.",
+      "outcomes": [
+        "Criar hierarquia visual",
+        "Escolher pares tipográficos legíveis",
+        "Usar contraste e espaço em branco",
+        "Rever uma composição com critérios claros"
+      ],
+      "lessons": [
+        {
+          "id": "des-1",
+          "title": "Decide o que vem primeiro",
+          "module": "01 · Ver com intenção",
+          "minutes": 12,
+          "content": [
+            "Uma composição tem uma ordem de leitura. O título chama a atenção, o subtítulo explica e os detalhes ajudam a agir. Quando tudo tem o mesmo tamanho, o leitor precisa de adivinhar o que importa.",
+            "Define uma única mensagem principal e usa escala, peso e espaço para a destacar. Alinha elementos relacionados para que a estrutura seja fácil de perceber."
+          ],
+          "task": "Escolhe um cartaz e identifica a primeira, segunda e terceira informação que lês. Reorganiza-o num esboço simples."
+        },
+        {
+          "id": "des-2",
+          "title": "Tipografia e espaço",
+          "module": "01 · Ver com intenção",
+          "minutes": 14,
+          "content": [
+            "Escolhe uma fonte para títulos e outra, se precisares, para o texto. Menos estilos tornam o sistema mais consistente. Dá ao texto um tamanho confortável e um comprimento de linha moderado.",
+            "O espaço vazio separa grupos e cria ritmo. Aproxima informação relacionada e afasta secções com funções diferentes. Não precisas de preencher cada centímetro."
+          ],
+          "task": "Cria duas versões do mesmo anúncio: uma com pouco espaço e outra com margens generosas. Compara a leitura."
+        },
+        {
+          "id": "des-3",
+          "title": "Cor com propósito",
+          "module": "02 · Criar e rever",
+          "minutes": 14,
+          "content": [
+            "Escolhe uma cor dominante, uma cor de destaque e tons neutros. Usa o destaque para a ação principal. Evita depender apenas da cor para transmitir um estado: combina texto ou símbolos.",
+            "Revê a composição num ecrã pequeno. O texto mantém-se legível? A ação está clara? Há contraste suficiente? Pede a uma pessoa para resumir a mensagem em cinco segundos."
+          ],
+          "task": "Finaliza um cartaz para uma atividade local com título, data, local e ação principal. Testa a leitura num telemóvel."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Para que serve a hierarquia visual?",
+          "options": [
+            "Usar mais cores",
+            "Orientar a ordem de leitura",
+            "Preencher todo o espaço"
+          ],
+          "correct": 1,
+          "explanation": "A hierarquia ajuda a perceber o que é principal e o que é secundário."
+        },
+        {
+          "question": "O espaço em branco ajuda a…",
+          "options": [
+            "Agrupar informação e melhorar a leitura",
+            "Eliminar a necessidade de texto",
+            "Garantir que o cartaz vende"
+          ],
+          "correct": 0,
+          "explanation": "O espaço organiza a composição e dá ritmo à leitura."
+        },
+        {
+          "question": "Um estado de erro deve ser comunicado…",
+          "options": [
+            "Apenas pela cor vermelha",
+            "Sem qualquer indicação",
+            "Com texto e um sinal visual"
+          ],
+          "correct": 2,
+          "explanation": "Texto e sinal visual tornam a mensagem compreensível para mais pessoas."
+        }
+      ],
+      "resources": [
+        {
+          "title": "Guia de revisão visual",
+          "text": "REVISÃO VISUAL — KUVONA\n\n[ ] Uma mensagem principal\n[ ] Ordem de leitura clara\n[ ] Texto legível no telemóvel\n[ ] Alinhamentos consistentes\n[ ] Espaço entre grupos\n[ ] Cor com função\n[ ] Ação principal identificável\n"
+        }
+      ],
+      "skills": [
+        "Hierarquia visual",
+        "Tipografia",
+        "Composição"
+      ],
+      "requirements": [
+        "Um programa de apresentação, desenho ou apenas papel.",
+        "Vontade de observar, experimentar e rever."
+      ],
+      "audience": [
+        "Quem cria cartazes, apresentações ou publicações.",
+        "Iniciantes que querem comunicar com mais clareza."
+      ],
+      "instructorBio": "Conteúdo escrito pela Equipa Kuvona para praticar comunicação visual através de exercícios de observação, composição e revisão.",
+      "project": "Um cartaz de uma atividade local com hierarquia clara, tipografia legível e ação principal."
+    },
+    {
+      "id": "digital",
+      "title": "Mais foco, menos ruído",
+      "subtitle": "Produtividade digital",
+      "category": "Carreira",
+      "level": "Todos os níveis",
+      "price": 0,
+      "color": "sky",
+      "symbol": "◎",
+      "instructor": "Equipa Kuvona",
+      "initials": "KV",
+      "minutes": 30,
+      "description": "Cria um sistema simples para organizar tarefas, proteger o teu tempo e aprender de forma consistente. Três aulas curtas para pôr em prática hoje.",
+      "outcomes": [
+        "Transformar objetivos em próximas ações",
+        "Reservar tempo para trabalho concentrado",
+        "Rever prioridades todas as semanas"
+      ],
+      "lessons": [
+        {
+          "id": "dig-1",
+          "title": "Liberta a tua cabeça",
+          "module": "01 · Um sistema simples",
+          "minutes": 10,
+          "content": [
+            "Captura tarefas num único lugar. Uma lista não precisa de ser perfeita; precisa de te ajudar a lembrar o que fazer. Separa projetos grandes das próximas ações concretas.",
+            "“Aprender programação” é um objetivo. “Fazer a primeira aula durante 25 minutos” é uma próxima ação. Quanto mais clara for a ação, mais fácil será começar."
+          ],
+          "task": "Escreve cinco tarefas pendentes e transforma cada uma numa ação com verbo, objeto e resultado visível."
+        },
+        {
+          "id": "dig-2",
+          "title": "Dá lugar ao que importa",
+          "module": "01 · Um sistema simples",
+          "minutes": 10,
+          "content": [
+            "Reserva blocos curtos na agenda para uma única atividade. Desliga notificações que não são necessárias durante esse bloco e prepara os materiais antes de começar.",
+            "Inclui pausas e margem para imprevistos. Um plano realista respeita o tempo e a energia disponíveis. Usa a agenda da Kuvona para marcar uma sessão de estudo."
+          ],
+          "task": "Agenda dois blocos de 25 minutos esta semana e define o resultado esperado para cada um."
+        },
+        {
+          "id": "dig-3",
+          "title": "A revisão que muda a semana",
+          "module": "02 · Manter o ritmo",
+          "minutes": 10,
+          "content": [
+            "Uma revisão semanal fecha ciclos. Olha para o que concluíste, o que ficou bloqueado e o que deixou de ser importante. Ajusta o plano em vez de acumular culpa.",
+            "Escolhe poucas prioridades para a semana seguinte. Um sistema útil pode mudar contigo: se está pesado, simplifica-o. O objetivo é apoiar o trabalho, não criar mais trabalho."
+          ],
+          "task": "Reserva dez minutos no fim da semana: revê a lista, elimina uma tarefa sem valor e escolhe três prioridades."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Qual é uma próxima ação concreta?",
+          "options": [
+            "Ser mais produtivo",
+            "Melhorar a carreira",
+            "Ler a primeira aula durante 20 minutos"
+          ],
+          "correct": 2,
+          "explanation": "Uma ação concreta permite começar e reconhecer quando está concluída."
+        },
+        {
+          "question": "Um bloco de foco deve ter…",
+          "options": [
+            "Uma atividade definida",
+            "Todas as tarefas ao mesmo tempo",
+            "Notificações sempre abertas"
+          ],
+          "correct": 0,
+          "explanation": "Uma atividade definida reduz a troca constante de contexto."
+        },
+        {
+          "question": "A revisão semanal serve para…",
+          "options": [
+            "Repetir o plano sem mudanças",
+            "Ajustar prioridades e resolver pendências",
+            "Acrescentar tarefas sem limite"
+          ],
+          "correct": 1,
+          "explanation": "A revisão mantém o sistema alinhado com a realidade."
+        }
+      ],
+      "resources": [
+        {
+          "title": "Modelo de revisão semanal",
+          "text": "REVISÃO SEMANAL — KUVONA\n\nO que concluí:\nO que aprendi:\nO que ficou bloqueado:\nO que vou deixar de fazer:\nTrês prioridades da próxima semana:\n1.\n2.\n3.\nPróxima sessão de estudo:\n"
+        }
+      ],
+      "skills": [
+        "Foco",
+        "Organização",
+        "Rotinas"
+      ],
+      "requirements": [
+        "Uma agenda em papel ou digital.",
+        "Alguns minutos para aplicar os exercícios ao teu dia."
+      ],
+      "audience": [
+        "Estudantes a construir uma rotina de aprendizagem.",
+        "Profissionais que querem organizar melhor as próximas ações."
+      ],
+      "instructorBio": "A Equipa Kuvona desenvolve material editorial de prática para esta demonstração, com propostas simples que cada estudante pode adaptar à sua realidade.",
+      "project": "Uma lista de próximas ações, duas sessões de foco e um modelo de revisão semanal."
+    },
+    {
+      "id": "sheets",
+      "title": "Planilhas que trabalham contigo",
+      "subtitle": "Folhas de cálculo essenciais",
+      "category": "Produtividade",
+      "price": 120000,
+      "color": "sage",
+      "symbol": "Σ",
+      "skills": [
+        "Fórmulas",
+        "Tabelas",
+        "Organização de dados"
+      ],
+      "description": "Organiza informação e transforma tarefas repetidas em cálculos simples. Um percurso introdutório que podes praticar no Excel, Google Sheets ou LibreOffice.",
+      "outcomes": [
+        "Organizar uma tabela com cabeçalhos claros",
+        "Usar referências e fórmulas simples",
+        "Construir um pequeno resumo de despesas"
+      ],
+      "requirements": [
+        "Acesso a uma aplicação de folhas de cálculo.",
+        "Não precisas de saber fórmulas."
+      ],
+      "audience": [
+        "Quem trabalha com listas e registos.",
+        "Estudantes a dar os primeiros passos em folhas de cálculo."
+      ],
+      "project": "Uma folha de despesas com categorias, totais e revisão dos dados.",
+      "level": "Iniciante",
+      "instructor": "Equipa Kuvona",
+      "initials": "KV",
+      "instructorBio": "Conteúdo editorial e exercícios escritos pela Equipa Kuvona para esta demonstração. Aprende os conceitos com exemplos curtos e aplica-os ao teu próprio projeto.",
+      "minutes": 50,
+      "lessons": [
+        {
+          "id": "sheets-1",
+          "module": "01 · Fundamentos",
+          "title": "Dá estrutura aos teus dados",
+          "minutes": 15,
+          "content": [
+            "Uma linha deve representar um registo e uma coluna uma característica. Numa lista de despesas, usa colunas como data, descrição, categoria e valor. Evita misturar subtotais com os registos originais.",
+            "Cabeçalhos claros, um formato consistente para datas e valores e a ausência de células fundidas dentro da tabela tornam os dados mais fáceis de filtrar e analisar."
+          ],
+          "task": "Cria uma tabela com dez despesas de exemplo e quatro colunas: data, descrição, categoria e valor."
+        },
+        {
+          "id": "sheets-2",
+          "module": "02 · Aplicar e praticar",
+          "title": "Fórmulas sem mistério",
+          "minutes": 20,
+          "content": [
+            "Uma fórmula começa com o sinal de igual. Em vez de escrever números fixos, referencia as células: =B2*C2 calcula o produto dos valores dessas células. Ao copiar a fórmula, as referências relativas acompanham a nova posição.",
+            "A função de soma pode ter um nome diferente conforme o idioma da aplicação: SUM ou SOMA. Experimenta o assistente da tua aplicação e confirma sempre se o intervalo inclui os dados pretendidos."
+          ],
+          "task": "Acrescenta quantidade e preço unitário à tua tabela. Calcula o total por linha e soma os totais."
+        },
+        {
+          "id": "sheets-3",
+          "module": "02 · Aplicar e praticar",
+          "title": "Uma revisão que evita surpresas",
+          "minutes": 15,
+          "content": [
+            "Antes de apresentar um resultado, procura valores em falta, linhas repetidas e formatos inconsistentes. Compara o total com uma conta manual de algumas linhas para detetar erros simples.",
+            "Um resumo precisa de responder a uma pergunta. Por exemplo: quanto foi registado em cada categoria? Começa por um filtro ou uma tabela de resumo, com rótulos e unidades visíveis."
+          ],
+          "task": "Revê três registos manualmente e cria um resumo das despesas por categoria."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Numa tabela organizada, uma linha deve representar…",
+          "options": [
+            "Um registo",
+            "Várias tabelas diferentes",
+            "Apenas o título"
+          ],
+          "correct": 0,
+          "explanation": "Uma estrutura consistente facilita filtros, cálculos e revisão."
+        },
+        {
+          "question": "Qual é uma fórmula com referências de células?",
+          "options": [
+            "Total do mês",
+            "=B2*C2",
+            "B2 vezes preço"
+          ],
+          "correct": 1,
+          "explanation": "O sinal de igual inicia a fórmula e as referências apontam para os valores."
+        },
+        {
+          "question": "Antes de partilhar um total, convém…",
+          "options": [
+            "Esconder os dados originais",
+            "Mudar apenas a cor",
+            "Verificar o intervalo e alguns cálculos manualmente"
+          ],
+          "correct": 2,
+          "explanation": "A revisão ajuda a encontrar intervalos incorretos e dados em falta."
+        }
+      ],
+      "resources": [
+        {
+          "title": "Caderno de prática · Folhas de cálculo essenciais",
+          "text": "KUVONA · Planilhas que trabalham contigo\n\nObjetivo do meu projeto:\n\n1. Dá estrutura aos teus dados\nExercício: Cria uma tabela com dez despesas de exemplo e quatro colunas: data, descrição, categoria e valor.\n\nAs minhas notas:\n\n2. Fórmulas sem mistério\nExercício: Acrescenta quantidade e preço unitário à tua tabela. Calcula o total por linha e soma os totais.\n\nAs minhas notas:\n\n3. Uma revisão que evita surpresas\nExercício: Revê três registos manualmente e cria um resumo das despesas por categoria.\n\nAs minhas notas:\n\nPróximo passo:\n"
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "title": "Conteúdo com propósito",
+      "subtitle": "Marketing digital para começar",
+      "category": "Marketing",
+      "price": 180000,
+      "color": "clay",
+      "symbol": "↗",
+      "skills": [
+        "Conteúdo",
+        "Público",
+        "Métricas"
+      ],
+      "description": "Passa de publicar por publicar a comunicar com uma intenção. Define o teu público, planeia conteúdos úteis e escolhe métricas ligadas ao teu objetivo.",
+      "outcomes": [
+        "Definir um objetivo de comunicação",
+        "Organizar um calendário editorial simples",
+        "Distinguir atenção de uma ação útil"
+      ],
+      "requirements": [
+        "Uma marca, projeto ou atividade para usar como exemplo.",
+        "Não é necessário comprar anúncios."
+      ],
+      "audience": [
+        "Pequenos negócios e projetos locais.",
+        "Quem quer começar a comunicar nas redes com mais intenção."
+      ],
+      "project": "Um calendário de sete conteúdos com público, mensagem e ação desejada.",
+      "level": "Iniciante",
+      "instructor": "Equipa Kuvona",
+      "initials": "KV",
+      "instructorBio": "Conteúdo editorial e exercícios escritos pela Equipa Kuvona para esta demonstração. Aprende os conceitos com exemplos curtos e aplica-os ao teu próprio projeto.",
+      "minutes": 50,
+      "lessons": [
+        {
+          "id": "marketing-1",
+          "module": "01 · Fundamentos",
+          "title": "Antes da publicação, o objetivo",
+          "minutes": 15,
+          "content": [
+            "Começa por decidir o que uma pessoa deve compreender ou fazer depois de ver o teu conteúdo. Conhecer uma oferta, reservar uma conversa e regressar à loja são objetivos diferentes.",
+            "Descreve uma pessoa e uma necessidade concreta. A linguagem deve aproximar-se das perguntas dessa pessoa, em vez de tentar impressionar todos os públicos ao mesmo tempo."
+          ],
+          "task": "Escolhe um projeto e escreve um objetivo, um público e uma ação desejada."
+        },
+        {
+          "id": "marketing-2",
+          "module": "02 · Aplicar e praticar",
+          "title": "Sete conteúdos, uma direção",
+          "minutes": 20,
+          "content": [
+            "Um calendário editorial evita recomeçar do zero todos os dias. Alterna explicações úteis, demonstrações, respostas a dúvidas e convites claros para a próxima ação.",
+            "Adapta o formato à mensagem e ao tempo disponível. Um conteúdo simples que responde a uma pergunta pode ser mais útil do que uma produção elaborada sem objetivo."
+          ],
+          "task": "Planeia sete conteúdos. Para cada um, regista a pergunta do público, a mensagem e a próxima ação."
+        },
+        {
+          "id": "marketing-3",
+          "module": "02 · Aplicar e praticar",
+          "title": "Mede para aprender",
+          "minutes": 15,
+          "content": [
+            "As visualizações mostram alcance, mas não explicam sozinhas o resultado de um negócio. Escolhe métricas próximas do teu objetivo: pedidos de informação, reservas ou outras ações que possas observar.",
+            "Compara períodos semelhantes e regista o contexto. Um resultado isolado não prova que uma mudança causou um efeito. Usa os dados para formular uma próxima experiência pequena."
+          ],
+          "task": "Escolhe duas métricas para o teu calendário e define como vais registá-las durante uma semana."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Antes de criar um conteúdo, define…",
+          "options": [
+            "Apenas a cor",
+            "Público, objetivo e ação desejada",
+            "O número de seguidores que gostarias de ter"
+          ],
+          "correct": 1,
+          "explanation": "A intenção orienta a mensagem e a escolha do formato."
+        },
+        {
+          "question": "Um calendário editorial ajuda a…",
+          "options": [
+            "Organizar mensagens e reduzir improviso",
+            "Garantir vendas",
+            "Publicar o mesmo texto todos os dias"
+          ],
+          "correct": 0,
+          "explanation": "O calendário coordena conteúdo e objetivos."
+        },
+        {
+          "question": "Uma métrica útil depende…",
+          "options": [
+            "Apenas de ser grande",
+            "Do que está na moda",
+            "Do objetivo que queres observar"
+          ],
+          "correct": 2,
+          "explanation": "As métricas devem ajudar a perceber o resultado pretendido."
+        }
+      ],
+      "resources": [
+        {
+          "title": "Caderno de prática · Marketing digital para começar",
+          "text": "KUVONA · Conteúdo com propósito\n\nObjetivo do meu projeto:\n\n1. Antes da publicação, o objetivo\nExercício: Escolhe um projeto e escreve um objetivo, um público e uma ação desejada.\n\nAs minhas notas:\n\n2. Sete conteúdos, uma direção\nExercício: Planeia sete conteúdos. Para cada um, regista a pergunta do público, a mensagem e a próxima ação.\n\nAs minhas notas:\n\n3. Mede para aprender\nExercício: Escolhe duas métricas para o teu calendário e define como vais registá-las durante uma semana.\n\nAs minhas notas:\n\nPróximo passo:\n"
+        }
+      ]
+    },
+    {
+      "id": "python",
+      "title": "Pensa em código",
+      "subtitle": "Primeiros passos com Python",
+      "category": "Tecnologia",
+      "price": 220000,
+      "color": "sky",
+      "symbol": "{ }",
+      "skills": [
+        "Python",
+        "Lógica",
+        "Programação"
+      ],
+      "description": "Entende variáveis, decisões e repetições com exemplos pequenos. Uma introdução de leitura e prática para perder o medo da primeira linha de código.",
+      "outcomes": [
+        "Representar valores em variáveis",
+        "Usar condições para tomar decisões",
+        "Percorrer uma lista com uma repetição"
+      ],
+      "requirements": [
+        "Um ambiente Python disponível no teu computador ou um editor de prática.",
+        "Não precisas de experiência em programação."
+      ],
+      "audience": [
+        "Pessoas curiosas sobre programação.",
+        "Estudantes a aprender lógica com exemplos simples."
+      ],
+      "project": "Um programa que percorre uma lista de tarefas e apresenta um resumo.",
+      "level": "Iniciante",
+      "instructor": "Equipa Kuvona",
+      "initials": "KV",
+      "instructorBio": "Conteúdo editorial e exercícios escritos pela Equipa Kuvona para esta demonstração. Aprende os conceitos com exemplos curtos e aplica-os ao teu próprio projeto.",
+      "minutes": 60,
+      "lessons": [
+        {
+          "id": "python-1",
+          "module": "01 · Fundamentos",
+          "title": "Valores com nome",
+          "minutes": 20,
+          "content": [
+            "Uma variável associa um nome a um valor. Por exemplo, nome = \"Ana\" guarda um texto, e aulas = 3 associa um número inteiro ao nome aulas. Usa nomes que expliquem o que o valor representa.",
+            "A instrução print(nome) apresenta o valor. Experimenta alterar os valores e observar a saída. O objetivo inicial é compreender a relação entre o que escreves e o resultado."
+          ],
+          "task": "Cria variáveis para o teu nome, um curso e o número de aulas. Apresenta os três valores com print."
+        },
+        {
+          "id": "python-2",
+          "module": "02 · Aplicar e praticar",
+          "title": "Se isto, então aquilo",
+          "minutes": 20,
+          "content": [
+            "Uma condição permite escolher um caminho. Em Python, if aulas > 0: pode iniciar um bloco que só executa quando a comparação é verdadeira. A indentação faz parte da estrutura do programa.",
+            "Um else oferece um caminho alternativo. Testa valores de ambos os lados da condição para perceber se cada caminho produz o resultado esperado."
+          ],
+          "task": "Cria uma condição que apresente \"Continuar a aprender\" quando há aulas por concluir e \"Percurso terminado\" caso contrário."
+        },
+        {
+          "id": "python-3",
+          "module": "02 · Aplicar e praticar",
+          "title": "Uma lista, vários passos",
+          "minutes": 20,
+          "content": [
+            "Uma lista reúne valores: tarefas = [\"Ler\", \"Praticar\", \"Rever\"]. Uma repetição com for tarefa in tarefas: permite trabalhar cada valor por sua vez.",
+            "Começa por apresentar cada tarefa. Depois experimenta acrescentar ou retirar um elemento e observa como a repetição acompanha a mudança sem copiar mais linhas de código."
+          ],
+          "task": "Cria uma lista de três tarefas de estudo e percorre-a com for, apresentando uma tarefa por linha."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Uma variável permite…",
+          "options": [
+            "Associar um nome a um valor",
+            "Executar apenas desenhos",
+            "Eliminar todos os erros"
+          ],
+          "correct": 0,
+          "explanation": "O nome torna o valor utilizável e compreensível no programa."
+        },
+        {
+          "question": "Para escolher entre dois caminhos usa-se…",
+          "options": [
+            "Apenas print",
+            "Uma condição if/else",
+            "O nome do ficheiro"
+          ],
+          "correct": 1,
+          "explanation": "A condição avalia uma expressão e escolhe o bloco apropriado."
+        },
+        {
+          "question": "Um for sobre uma lista ajuda a…",
+          "options": [
+            "Evitar guardar valores",
+            "Mudar a cor do editor",
+            "Percorrer os seus elementos"
+          ],
+          "correct": 2,
+          "explanation": "A repetição executa o bloco para cada elemento da lista."
+        }
+      ],
+      "resources": [
+        {
+          "title": "Caderno de prática · Primeiros passos com Python",
+          "text": "KUVONA · Pensa em código\n\nObjetivo do meu projeto:\n\n1. Valores com nome\nExercício: Cria variáveis para o teu nome, um curso e o número de aulas. Apresenta os três valores com print.\n\nAs minhas notas:\n\n2. Se isto, então aquilo\nExercício: Cria uma condição que apresente \"Continuar a aprender\" quando há aulas por concluir e \"Percurso terminado\" caso contrário.\n\nAs minhas notas:\n\n3. Uma lista, vários passos\nExercício: Cria uma lista de três tarefas de estudo e percorre-a com for, apresentando uma tarefa por linha.\n\nAs minhas notas:\n\nPróximo passo:\n"
+        }
+      ]
+    },
+    {
+      "id": "career",
+      "title": "O teu próximo capítulo profissional",
+      "subtitle": "CV e preparação para entrevistas",
+      "category": "Carreira",
+      "price": 0,
+      "color": "lavender",
+      "symbol": "→",
+      "skills": [
+        "Currículo",
+        "Entrevistas",
+        "Comunicação"
+      ],
+      "description": "Conta o teu percurso com clareza. Organiza o CV, escolhe exemplos concretos e prepara uma conversa profissional com intenção.",
+      "outcomes": [
+        "Adaptar um CV a uma oportunidade",
+        "Descrever experiências com exemplos concretos",
+        "Preparar perguntas para uma entrevista"
+      ],
+      "requirements": [
+        "Um rascunho do teu percurso académico ou profissional.",
+        "Uma oportunidade ou função que gostarias de explorar."
+      ],
+      "audience": [
+        "Quem procura a primeira oportunidade.",
+        "Profissionais a atualizar a forma de apresentar o seu percurso."
+      ],
+      "project": "Um CV revisto e três exemplos de experiências preparados para uma entrevista.",
+      "level": "Iniciante",
+      "instructor": "Equipa Kuvona",
+      "initials": "KV",
+      "instructorBio": "Conteúdo editorial e exercícios escritos pela Equipa Kuvona para esta demonstração. Aprende os conceitos com exemplos curtos e aplica-os ao teu próprio projeto.",
+      "minutes": 45,
+      "lessons": [
+        {
+          "id": "career-1",
+          "module": "01 · Fundamentos",
+          "title": "Clareza antes do formato",
+          "minutes": 15,
+          "content": [
+            "Um CV ajuda alguém a compreender a relação entre o teu percurso e uma oportunidade. Organiza contactos, apresentação curta, experiência, formação e competências relevantes.",
+            "Seleciona informação verdadeira e específica. Se ainda não tens experiência profissional, podes descrever projetos académicos, trabalho voluntário e outras atividades relevantes sem os apresentar como empregos."
+          ],
+          "task": "Revê o teu CV e identifica três informações que ajudam a perceber a tua relação com a função pretendida."
+        },
+        {
+          "id": "career-2",
+          "module": "02 · Aplicar e praticar",
+          "title": "Mostra com exemplos",
+          "minutes": 15,
+          "content": [
+            "Dizer \"sou organizado\" é menos informativo do que explicar uma situação em que planeaste tarefas e cumpriste um prazo. Prepara exemplos com contexto, ação e resultado observado.",
+            "Usa resultados que consigas explicar. Não inventes números ou responsabilidades. Se o trabalho foi de equipa, distingue a tua contribuição do resultado coletivo."
+          ],
+          "task": "Escreve três exemplos curtos: uma dificuldade, o que fizeste e o resultado que observaste."
+        },
+        {
+          "id": "career-3",
+          "module": "02 · Aplicar e praticar",
+          "title": "Uma entrevista é uma conversa",
+          "minutes": 15,
+          "content": [
+            "Lê a descrição da oportunidade e prepara perguntas sobre a função, a equipa e o modo de trabalhar. Organiza o que precisas de levar e confirma os detalhes da entrevista.",
+            "Pratica uma apresentação curta em voz alta. Numa pergunta difícil, podes pedir um momento para organizar a resposta. Depois da conversa, regista o que aprendeste e o que queres melhorar."
+          ],
+          "task": "Pratica uma apresentação de um minuto e prepara três perguntas relevantes para a pessoa que te vai entrevistar."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Um CV deve apresentar…",
+          "options": [
+            "Todas as informações sem seleção",
+            "Informação verdadeira e relevante para a oportunidade",
+            "Responsabilidades inventadas"
+          ],
+          "correct": 1,
+          "explanation": "A clareza e a relevância ajudam a compreender o teu percurso."
+        },
+        {
+          "question": "Um exemplo forte inclui…",
+          "options": [
+            "Contexto, ação e resultado observado",
+            "Apenas um adjetivo",
+            "Só o nome da empresa"
+          ],
+          "correct": 0,
+          "explanation": "Um exemplo concreto mostra como aplicaste uma competência."
+        },
+        {
+          "question": "Antes da entrevista, convém…",
+          "options": [
+            "Decorar respostas sem compreender",
+            "Evitar perguntas",
+            "Conhecer a oportunidade e preparar exemplos e perguntas"
+          ],
+          "correct": 2,
+          "explanation": "A preparação torna a conversa mais clara e útil para ambas as partes."
+        }
+      ],
+      "resources": [
+        {
+          "title": "Caderno de prática · CV e preparação para entrevistas",
+          "text": "KUVONA · O teu próximo capítulo profissional\n\nObjetivo do meu projeto:\n\n1. Clareza antes do formato\nExercício: Revê o teu CV e identifica três informações que ajudam a perceber a tua relação com a função pretendida.\n\nAs minhas notas:\n\n2. Mostra com exemplos\nExercício: Escreve três exemplos curtos: uma dificuldade, o que fizeste e o resultado que observaste.\n\nAs minhas notas:\n\n3. Uma entrevista é uma conversa\nExercício: Pratica uma apresentação de um minuto e prepara três perguntas relevantes para a pessoa que te vai entrevistar.\n\nAs minhas notas:\n\nPróximo passo:\n"
+        }
+      ]
+    }
+  ]
+}

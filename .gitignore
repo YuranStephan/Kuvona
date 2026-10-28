@@ -1,0 +1,18 @@
+node_modules/
+.env
+.env.*
+!.env.example
+coverage/
+test-results/
+.qa/
+*.log
+*.zip
+.DS_Store
+
+# Notas internas e dados locais (não vão para o repositório)
+int.txt
+inst
+platform/.data/
+platform/.next/
+platform/.env.local
+platform/.qa/
