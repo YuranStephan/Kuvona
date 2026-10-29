@@ -2115,16 +2115,24 @@
   align-items: center;
   gap: 8px;
   min-height: 44px;
-  color: inherit;
-  opacity: 0.75;
+  padding: 0 16px;
+  border: 1px solid rgb(242 168 59 / 45%);
+  border-radius: 999px;
+  color: var(--paper);
+  font-size: 15px;
+  font-weight: 600;
   text-decoration: none;
-  transition: opacity 0.2s;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.footer-credit svg {
+  color: var(--saffron);
 }
 
 .footer-credit:hover,
 .footer-credit:focus-visible {
-  opacity: 1;
-  text-decoration: underline;
+  background: rgb(242 168 59 / 14%);
+  border-color: var(--saffron);
 }
 
 @media (max-width: 800px) {
