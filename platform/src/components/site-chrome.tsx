@@ -209,6 +209,20 @@ export function SiteFooter() {
       <div className="container footer-bottom">
         <span>© {new Date().getFullYear()} Academia Kuvona · Maputo, Moçambique</span>
         <span>Pagamentos com M-Pesa e e-Mola · Vídeos alojados no YouTube</span>
+        <a
+          className="footer-credit"
+          href="https://www.linkedin.com/in/yuranstefan/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Desenvolvido por Yuran Magodine (abre o LinkedIn)"
+          title="Yuran Magodine no LinkedIn"
+        >
+          Desenvolvido por Yuran Magodine
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="3.5" />
+            <path d="M8 10.5V16M8 7.8v.01M12 16v-5.5M12 13c0-1.6 1-2.6 2.4-2.6S17 11.3 17 13v3" />
+          </svg>
+        </a>
       </div>
     </footer>
   );

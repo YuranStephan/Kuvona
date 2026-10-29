@@ -2108,3 +2108,32 @@
   .partner-group[aria-hidden="true"] { display: none; }
 }
 
+
+/* Footer credit (developer link) */
+.footer-credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  color: inherit;
+  opacity: 0.75;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.footer-credit:hover,
+.footer-credit:focus-visible {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+.footer-bottom {
+  align-items: center;
+}
