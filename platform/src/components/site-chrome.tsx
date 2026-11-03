@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { logoutAction } from "@/actions/auth";
 import type { SessionUser } from "@/server/auth/service";
-import { isLocalMode } from "@/server/config";
 import { Logo } from "./cover";
 import { Icon } from "./icon";
 import { Avatar } from "./ui";
@@ -9,11 +8,6 @@ import { Avatar } from "./ui";
 export function SiteHeader({ user }: { user: SessionUser | null }) {
   return (
     <>
-      {isLocalMode() && (
-        <div className="local-banner">
-          Modo local: base de dados neste computador e simulador de pagamentos ativo. <Link href="/entrar">Contas de teste</Link>
-        </div>
-      )}
       <header className="site-header">
         <div className="container site-header-inner">
           <Link href="/" className="logo-link" aria-label="Academia Kuvona — início">
@@ -208,7 +202,7 @@ export function SiteFooter() {
       </div>
       <div className="container footer-bottom">
         <span>© {new Date().getFullYear()} Academia Kuvona · Maputo, Moçambique</span>
-        <span>Pagamentos com M-Pesa e e-Mola · Vídeos alojados no YouTube</span>
+        <span>Pagamentos com M-Pesa e e-Mola</span>
         <a
           className="footer-credit"
           href="https://www.linkedin.com/in/yuranstefan/"

@@ -132,3 +132,27 @@ Quando acabares cada tarefa: `npm run typecheck && npm test`, atualiza `docs/STA
 
 **GitHub:** repositório `https://github.com/YuranStephan/Kuvona` (remoto `origin`, branch `main`), enviado pelo Claude em 28/10/2026. É **público** até o proprietário o tornar privado. O Codex faz commits pequenos e só faz `git push` quando o proprietário pedir; nunca `--force`.
 **Codex:** não fazer `git push` sem o proprietário confirmar o repositório; trabalhar em commits pequenos na branch `main` local.
+
+---
+## 🚀 RONDA "PRODUTO REAL" — 03/11/2026 (pedido do proprietário: tudo funcional, sem aspeto de demo)
+
+Objetivo: o site em produção (kuvona.vercel.app + Supabase) tem de funcionar em **todos** os casos de uso, sem texto de demonstração/simulação. Produção já não mostra "simulador", "modo local" nem parceiros de demonstração (verificado em /, /cursos, /entrar, /registar, /sobre, /ensinar). Claude removeu o banner "Modo local" e a menção ao YouTube no rodapé.
+
+### Ficheiros do Claude nesta ronda (Codex: NÃO editar)
+`src/server/db/**`, `src/server/payments/**`, `src/server/auth/**`, `src/server/email/**`, `scripts/db.ts`, `src/components/site-chrome.tsx`.
+Tudo o resto é do Codex. Pedidos para ficheiros reservados: secção "Pedidos ao Claude".
+
+### Claude faz
+- **P1** E2E de todos os casos de uso contra uma base local limpa (registo → inscrição gratuita → compra → verificação pela gestão → aula → certificado; instrutor; gestão) e correção do que falhar.
+- **P2** Segurança de produção: pagamentos, sessões, limites de pedidos, cabeçalhos, resposta a erros.
+- **P3** Email real (Resend) e reposição de palavra-passe; contas de teste em produção (já criadas: gestao/instrutor/estudante@kuvona.test).
+
+### Codex faz (por esta ordem; são independentes de mim)
+- **C13 · QA móvel 390 px** de todas as rotas (prioridade 1, regra do proprietário). Relatório em `docs/QA_MOBILE.md`.
+- **C14 · Autonomia da gestão**: tudo o que ainda é texto fixo (home, "Como funciona", rodapé, categorias) editável em `/admin/definicoes`.
+- **C15 · E2E do instrutor** em `scripts/e2e.mts` (criar curso → aula YouTube → avaliação → rever → publicar → inscrição).
+- **C16 · Testes** de permissões do editor, validação de links YouTube, webhook.
+- **C12 · GitHub/Vercel**: README, `.env.example`, CI, DEPLOY.md.
+- **C17 · Auditoria de texto**: procurar em `src/**` qualquer frase que soe a projeto de teste, demo ou promessa por cumprir ("em breve", números fictícios, estatísticas inventadas) e substituir por texto verdadeiro ou por conteúdo editável na gestão. Não inventar clientes, números nem depoimentos.
+
+Quando acabares cada tarefa: `npm run typecheck && npm test`, atualiza STATUS.md, risca aqui. Sem `git push`: o Claude publica.
