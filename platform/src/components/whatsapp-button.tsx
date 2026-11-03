@@ -1,5 +1,4 @@
 import { getDb } from "@/server/db/client";
-import { isLocalMode } from "@/server/config";
 import { getSetting } from "@/server/settings";
 
 /**
@@ -9,9 +8,8 @@ import { getSetting } from "@/server/settings";
  */
 export async function WhatsAppButton() {
   const school = await getSetting(await getDb(), "school");
-  if (!school.whatsapp && !isLocalMode()) return null;
-  const text = encodeURIComponent(school.whatsappGreeting);
-  const href = school.whatsapp ? `https://wa.me/${school.whatsapp}?text=${text}` : `https://wa.me/?text=${text}`;
+  if (!school.whatsapp) return null;
+  const href = `https://wa.me/${school.whatsapp}?text=${encodeURIComponent(school.whatsappGreeting)}`;
   return (
     <a
       href={href}
@@ -19,7 +17,7 @@ export async function WhatsAppButton() {
       rel="noopener noreferrer"
       className="wa-fab"
       aria-label="Falar connosco no WhatsApp"
-      title={school.whatsapp ? "Falar connosco no WhatsApp" : "WhatsApp: configura o número em Gestão → Definições"}
+      title="Falar connosco no WhatsApp"
     >
       <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M3.5 20.5 4.8 16A8.5 8.5 0 1 1 8 19.2l-4.5 1.3Z" />

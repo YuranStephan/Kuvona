@@ -38,7 +38,7 @@ export const schoolSettingsSchema = z.object({
         error: "Número de WhatsApp inválido (ex.: 258841234567).",
       }),
     )
-    .default(""),
+    .default("258840571214"),
   whatsappGreeting: z
     .string()
     .trim()

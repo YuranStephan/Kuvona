@@ -17,7 +17,7 @@ export default async function AdminOverview() {
   return (
     <>
       <PageHeader eyebrow="Gestão" title="Visão geral">
-        Receita conta apenas pagamentos confirmados (sem simulador). Reembolsos não contam como receita.
+        Receita conta apenas pagamentos confirmados. Reembolsos não contam como receita.
       </PageHeader>
 
       {o.awaitingCount > 0 && (

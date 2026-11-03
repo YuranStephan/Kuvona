@@ -156,3 +156,14 @@ Tudo o resto é do Codex. Pedidos para ficheiros reservados: secção "Pedidos a
 - **C17 · Auditoria de texto**: procurar em `src/**` qualquer frase que soe a projeto de teste, demo ou promessa por cumprir ("em breve", números fictícios, estatísticas inventadas) e substituir por texto verdadeiro ou por conteúdo editável na gestão. Não inventar clientes, números nem depoimentos.
 
 Quando acabares cada tarefa: `npm run typecheck && npm test`, atualiza STATUS.md, risca aqui. Sem `git push`: o Claude publica.
+
+
+### Codex — ronda iniciada em 03/11/2026
+
+C13–C17 e C12 em execução. QA na porta 3100 com PGLITE_DIR=.data/qa-codex-2026-11-03; sem acesso ao Supabase. Reserva: estilos base/site/classroom/studio, apresentação da home/rodapé por novo componente, definições de apresentação, testes do editor/YouTube e scripts de QA/E2E. Ficheiros reservados ao Claude nesta ronda ficam intactos.
+
+### Atualização (03/11/2026, Claude) — leitura obrigatória antes de continuar
+- **Simulador de pagamentos desligado por defeito em todo o lado** (`sandboxEnabled()` só com `KUVONA_ENABLE_SANDBOX=1`). Os testes do Vitest ligam-no em `vitest.config.mts`. Para o E2E local: `KUVONA_ENABLE_SANDBOX=1 npm run dev:local` e depois `npm run test:e2e`. **Nunca** definir esta variável na Vercel.
+- Banner "Modo local" removido; textos "simulador" tirados da gestão.
+- WhatsApp da academia: `258840571214` (gravado em produção e como valor por defeito em `settings.ts`). O botão flutuante aparece no canto inferior direito em todas as páginas.
+- O proprietário pediu outra vez: **trabalhar em paralelo com o Codex**. Ordem: C13 (móvel) → C17 (texto de demo) → C14 → C15 → C16 → C12. Começa já pelo C13.

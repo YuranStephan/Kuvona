@@ -11,7 +11,6 @@ import { ActionForm, ConfirmSubmit, SubmitButton } from "@/components/forms";
 import { PageHeader } from "@/components/workspace";
 import { Notice } from "@/components/ui";
 import { listCategories } from "@/server/catalog/queries";
-import { isLocalMode, sandboxEnabled } from "@/server/config";
 import { getDb } from "@/server/db/client";
 import { getSetting } from "@/server/settings";
 
@@ -55,9 +54,7 @@ export default async function SettingsPage() {
         <p className="small muted">
           O estudante envia o valor para estes números e indica o ID da
           transação; a gestão confirma no extrato. Deixa um número vazio para
-          esconder esse método.{" "}
-          {sandboxEnabled() &&
-            "O simulador de pagamentos está ativo porque estás em modo local."}
+          esconder esse método.
         </p>
         <ActionForm action={savePaymentSettingsAction} className="stack">
           <div className="form-grid">
@@ -206,11 +203,7 @@ export default async function SettingsPage() {
                 inputMode="tel"
               />
               <span className="hint">
-                Formato internacional, sem “+”. Vazio = botão escondido
-                {isLocalMode()
-                  ? " (em modo local fica visível para testes)"
-                  : ""}
-                .
+                Formato internacional, sem “+”. Vazio = botão escondido.
               </span>
             </div>
             <div className="field">
